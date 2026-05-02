@@ -1,9 +1,8 @@
 module not_gate (
-  input a, b,
-  output out);
-  wire c;
-  nand (c, a, b);
-  nand (out, c, c);
- 
+    input a,
+    output out
+);
+
+    nand(out, a, a);
+
 endmodule
-  
