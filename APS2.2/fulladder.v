@@ -34,14 +34,14 @@ module fulladder(
     );
 
     // carry 2
-    AND and2(
+    and_gate and2(
         .a(cin),
         .b(xor1_saida),
         .out(and2_saida)
     );
 
     // carry final
-    OR or1(
+    or_gate or1(
         .a(and1_saida),
         .b(and2_saida),
         .out(cout)
